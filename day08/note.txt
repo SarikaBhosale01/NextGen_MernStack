@@ -1,0 +1,28 @@
+
+{
+  "success": true,
+  "message": "Welcome to the JSON API",
+  "timestamp": "2025-01-21T14:15:00Z",
+  "user": {
+    "id": 101,
+    "name": "John Doe",
+    "email": "johndoe@example.com"
+  },
+  "items": [
+    {
+      "id": 1,
+      "name": "Node.js",
+      "category": "Backend"
+    },
+    {
+      "id": 2,
+      "name": "Express.js",
+      "category": "Framework"
+    },
+    {
+      "id": 3,
+      "name": "JSON",
+      "category": "Data Format"
+    }
+  ]
+}

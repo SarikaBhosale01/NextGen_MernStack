@@ -1,0 +1,17 @@
+.itembox1{
+    background-color: orange;
+    width: 500px;
+    height: 200px;
+}
+.itembox2{
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+.itembox3{
+    background-color: green;
+    width: 500px;
+    height: 200px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #6767d1;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100px;
+            height: auto;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: calc(100% - 24px);
+            border: 1px solid #d45e5e;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <input type="number" id="weight" placeholder="Enter your weight (kg)" required>
+        <input type="number" id="height" placeholder="Enter your height (m)" step="0.01" required>
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const resultDiv = document.getElementById('result');
+
+            if (!weight || !height) {
+                resultDiv.innerHTML = '<p style="color: red;">Please enter valid weight and height values!</p>';
+                return;
+            }
+
+            const bmi = weight / (height * height);
+            let imgSrc = '';
+
+            if (bmi < 18.5) {
+                imgSrc = 'img/underweight.jpg'; // Replace with your image path for underweight
+            } else if (bmi >= 18.5 && bmi < 24.9) {
+                imgSrc = 'img/normalweight.jpg'; // Replace with your image path for normal weight
+            } else {
+                imgSrc = 'img/overweight.jpg'; // Replace with your image path for overweight
+            }
+
+            resultDiv.innerHTML = `
+                 <p>Your BMI is: ${bmi.toFixed(2)}</p>
+                <img src="${imgSrc}" alt="BMI Category Image">
+            `;
+        }
+    </script>
+</body>
+</html>

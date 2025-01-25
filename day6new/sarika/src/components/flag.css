@@ -1,0 +1,36 @@
+.flag {
+    width: 300px;
+    border: 2px solid black;
+  }
+  
+  .stripe {
+    height: 100px;
+    width: 100%;
+  }
+  
+  .orange {
+    background-color: orange;
+  }
+  
+  .white {
+    background-color: white;
+    position: relative;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .chakra {
+    background-color: blue;
+    border: 3px solid blue;
+    border-radius: 60%;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  

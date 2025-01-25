@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Addition of two number</h1>
+    
+        <input type="text" id="first" ><hr>
+        <input type="text" id="second" >
+        <input type="button" onclick="Addfunction()" value=" ADD">
+        <input type="button"  value=" sub" onclick="Addfunction()">
+        <h1 id="result"></h1>
+        <h1>Result</h1>
+    
+    <script>
+        
+         function Addfunction(){
+
+              var a=parseInt(document.getElementById('first')).value;
+              var a=parseInt(document.getElementById('second')).value;
+              var c= a + b;
+              document.getElementById('result').innerText=c;
+   }
+    </script>
+</body>
+</html>

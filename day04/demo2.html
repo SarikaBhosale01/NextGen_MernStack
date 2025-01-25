@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      border: 1px solid lightgray;
+      padding: 10px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .container h2 {
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .grid-item {
+      text-align: center;
+    }
+    .grid-item img {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .grid-item span {
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+    .footer {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .footer a {
+      text-decoration: none;
+      color: blue;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Starting ₹299 | Latest styles from top brands</h2>
+    <div class="grid">
+      <div class="grid-item">
+        <img src="image/img1.jpg" alt="Crocs">
+        <span>Crocs</span>
+      </div>
+      <div class="grid-item">
+        <img src="image/img2.jpg" alt="Adidas">
+        <span>Adidas</span>
+      </div>
+      <div class="grid-item">
+        <img src="image/img3.jpg" alt="Skechers">
+        <span>Skechers</span>
+      </div>
+      <div class="grid-item">
+        <img src="image/img4.jpg" alt="Lavie">
+        <span>Lavie</span>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>SHOP NOW</h2>
+    </div>
+  </div>
+</body>
+</html>

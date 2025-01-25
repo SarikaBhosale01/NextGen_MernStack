@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function addition()
+    {
+        var a=parseInt(document.getElementById('first').value);
+        var b=parseInt(document.getElementById('second').value);
+        var c=a+b;
+        document.getElementById('result').innerText=c;
+    }
+    function substraction()
+    {
+        var a=parseInt(document.getElementById('first').value);
+        var b=parseInt(document.getElementById('second').value);
+        var c=a-b;
+        document.getElementById('result').innerText=c;
+    }
+    function multiplication()
+    {
+        var a=parseInt(document.getElementById('first').value);
+        var b=parseInt(document.getElementById('second').value);
+        var c=a*b;
+        document.getElementById('result').innerText=c;
+    }
+</script>
+<body>
+    <div class="box" style="background-color: aquamarine;">
+    <h1>Addition Of Two Numbers</h1><hr>
+</div>
+<div class="box1" style="background-color: pink;">
+    <input type="text" id="first"><hr>
+    <input type="text" id="second"><hr>
+    <input type="button" value="add" onclick="addition()">
+    <input type="button" value="sub" onclick="substraction()">
+    <input type="button" value="mul" onclick="multiplication()">
+</div>
+<div class="box2" style="background-color: rgb(129, 160, 181);">
+    <h1>id=result</h1>
+    <h1 id="result"></h1>
+</div>
+</body>
+</html>

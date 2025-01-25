@@ -1,0 +1,13 @@
+ 
+ db.movie.insertOne({"movie name":"sarika",
+    "hero":"avcoe",
+    "heroine":"sangita",
+    "year":2003,
+    "rating":4.3,
+    "genre":"comedy"
+})
+db.moviess.find()
+db.moviess.insertMany({
+
+})
+db.moviess.delateOne();

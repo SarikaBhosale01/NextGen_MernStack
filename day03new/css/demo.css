@@ -1,0 +1,28 @@
+.box1{
+    height: 150px;
+    width: 1000%;
+    color: black;
+    background-color: pink;
+}
+.box2{
+    width: 1000px;
+    height: 200px;
+    background-color: pink;
+}
+.box3{
+    width: 1000px;
+    height: 600px;
+    background-color: pink;
+}
+.box4{
+    background-color: blueviolet;
+    height: 300px;
+    width: 100%;
+}
+.boxmodel{
+height:600px ;
+width:1000px ;
+background-color: blue;
+margin-top: 100px;
+padding: 50px;
+}

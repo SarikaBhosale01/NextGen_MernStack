@@ -1,0 +1,58 @@
+.box1 {
+    width: 300px;
+    height: 180px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    background-color: rgb(158, 84, 121);
+  }
+  .container{
+    background-color: aqua;
+    border-radius: 5px;
+  }
+  
+  .box2 {
+    background-color:red;
+    height: 180%;
+    width: 300px;
+   
+  }
+  
+  .box3 {
+    background-color: #138808;
+    height: 200px;
+    width: 300px;
+  }
+  
+  .ashoka-chakra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #000080;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ashoka-chakra::after {
+    content: "";
+    width: 45px;
+    height: 45px;
+    border: 1px solid #000080;
+    border-radius: 50%;
+  }
+  .background {
+    background-image: url('C:\Users\sarika bhosale\OneDrive\Desktop\Next emp intern\day6new\sarika\src\components\image\girl.jpg'); /* Place image in 'public' folder */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    color: white; /* Optional: Adjust text color */
+  }
+  
+  
